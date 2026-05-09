@@ -109,4 +109,9 @@ public class EmployeeController {
         response.setStatus(200);
         return new ResponseEntity<>(response,HttpStatus.OK);
        }
+
+       @GetMapping("/sample")
+       public String SampleMsg(){
+        return "This is a Sample Message";
+       }
 }
