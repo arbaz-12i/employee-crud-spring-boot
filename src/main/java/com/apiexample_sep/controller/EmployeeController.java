@@ -110,6 +110,14 @@ public class EmployeeController {
         return new ResponseEntity<>(response,HttpStatus.OK);
        }
 
+       @GetMapping("/sampleMsg")
+       public APIResponse<String> sampleMsg(){
+        APIResponse response = new APIResponse();
+        response.setMessage("respose message");
+        response.setData("This is a Sample Message");
+        response.setStatus(200);
+        return response;
+         
        @GetMapping("/sample")
        public String SampleMsg(){
         return "This is a Sample Message";
