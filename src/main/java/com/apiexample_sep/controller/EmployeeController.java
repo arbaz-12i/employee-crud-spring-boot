@@ -117,5 +117,9 @@ public class EmployeeController {
         response.setData("This is a Sample Message");
         response.setStatus(200);
         return response;
+         
+       @GetMapping("/sample")
+       public String SampleMsg(){
+        return "This is a Sample Message";
        }
 }
